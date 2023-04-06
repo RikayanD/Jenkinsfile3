@@ -9,7 +9,7 @@ pipeline {
             steps {
                 echo 'building the application...'
                 sh "mvn -version"
-                sh "mvn clean install"
+                sh "mvn install"
             }
         }
         stage('test') {
